@@ -1,0 +1,7 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+language: objective-c
+xcode_project: DLRUIKit.xcodeproj
+xcode_scheme: DLRUIKitExampleApp
