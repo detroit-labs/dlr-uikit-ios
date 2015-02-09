@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "432270411A854C0C00EC6EED"
-               BuildableName = "DLRUIKitExampleAppTests.xctest"
-               BlueprintName = "DLRUIKitExampleAppTests"
+               BlueprintIdentifier = "439372F11A851D8B00A552D5"
+               BuildableName = "DLRUIKitTests.xctest"
+               BlueprintName = "DLRUIKitTests"
                ReferencedContainer = "container:DLRUIKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
