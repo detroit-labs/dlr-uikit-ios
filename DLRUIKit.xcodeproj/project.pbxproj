@@ -19,6 +19,9 @@
 		433A87031A8561C2008CFA82 /* UIButton+DLR.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A87011A8561C2008CFA82 /* UIButton+DLR.m */; };
 		433A87051A856455008CFA82 /* UIButton+DLRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A87041A856455008CFA82 /* UIButton+DLRTests.m */; };
 		433A87091A856929008CFA82 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A87081A856929008CFA82 /* ParentViewController.m */; };
+		4362BDC01A8ABA5900B3A89E /* UIDevice+DLR.h in Headers */ = {isa = PBXBuildFile; fileRef = 4362BDBE1A8ABA5900B3A89E /* UIDevice+DLR.h */; };
+		4362BDC11A8ABA5900B3A89E /* UIDevice+DLR.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362BDBF1A8ABA5900B3A89E /* UIDevice+DLR.m */; };
+		4362BDC31A8AC0C400B3A89E /* UIDevice+DLRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362BDC21A8AC0C400B3A89E /* UIDevice+DLRTests.m */; };
 		439372ED1A851D8B00A552D5 /* DLRUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 439372EC1A851D8B00A552D5 /* DLRUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		439372F31A851D8B00A552D5 /* DLRUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439372E71A851D8B00A552D5 /* DLRUIKit.framework */; };
 		439373661A8521A800A552D5 /* UIApplication+DLRLocalNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 439373581A8521A800A552D5 /* UIApplication+DLRLocalNotifications.h */; };
@@ -82,6 +85,9 @@
 		433A87041A856455008CFA82 /* UIButton+DLRTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DLRTests.m"; sourceTree = "<group>"; };
 		433A87071A856929008CFA82 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
 		433A87081A856929008CFA82 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		4362BDBE1A8ABA5900B3A89E /* UIDevice+DLR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DLR.h"; sourceTree = "<group>"; };
+		4362BDBF1A8ABA5900B3A89E /* UIDevice+DLR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DLR.m"; sourceTree = "<group>"; };
+		4362BDC21A8AC0C400B3A89E /* UIDevice+DLRTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DLRTests.m"; sourceTree = "<group>"; };
 		439372E71A851D8B00A552D5 /* DLRUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		439372EB1A851D8B00A552D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439372EC1A851D8B00A552D5 /* DLRUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRUIKit.h; sourceTree = "<group>"; };
@@ -282,6 +288,8 @@
 				433A87011A8561C2008CFA82 /* UIButton+DLR.m */,
 				4393735A1A8521A800A552D5 /* UIColor+DLR.h */,
 				4393735B1A8521A800A552D5 /* UIColor+DLR.m */,
+				4362BDBE1A8ABA5900B3A89E /* UIDevice+DLR.h */,
+				4362BDBF1A8ABA5900B3A89E /* UIDevice+DLR.m */,
 				4393735C1A8521A800A552D5 /* UIImage+DLR.h */,
 				4393735D1A8521A800A552D5 /* UIImage+DLR.m */,
 				4393735E1A8521A800A552D5 /* UIView+DLRLayoutConstraints.h */,
@@ -303,6 +311,7 @@
 				439373751A85220F00A552D5 /* UIApplication+DLRLocalNotificationsTests.m */,
 				433A87041A856455008CFA82 /* UIButton+DLRTests.m */,
 				439373761A85220F00A552D5 /* UIColor+DLRTests.m */,
+				4362BDC21A8AC0C400B3A89E /* UIDevice+DLRTests.m */,
 				439373771A85220F00A552D5 /* UIImage+DLRTests.m */,
 				439373781A85220F00A552D5 /* UIView+DLRLayoutConstraintsTests.m */,
 				439373791A85220F00A552D5 /* UIView+DLRRoundedCornersTests.m */,
@@ -325,6 +334,7 @@
 				4393736A1A8521A800A552D5 /* UIImage+DLR.h in Headers */,
 				433A87021A8561C2008CFA82 /* UIButton+DLR.h in Headers */,
 				439373681A8521A800A552D5 /* UIColor+DLR.h in Headers */,
+				4362BDC01A8ABA5900B3A89E /* UIDevice+DLR.h in Headers */,
 				439373661A8521A800A552D5 /* UIApplication+DLRLocalNotifications.h in Headers */,
 				4393736C1A8521A800A552D5 /* UIView+DLRLayoutConstraints.h in Headers */,
 				4393736E1A8521A800A552D5 /* UIView+DLRRoundedCorners.h in Headers */,
@@ -477,6 +487,7 @@
 				433A87031A8561C2008CFA82 /* UIButton+DLR.m in Sources */,
 				439373711A8521A800A552D5 /* UIViewController+DLRParentViewController.m in Sources */,
 				4393736D1A8521A800A552D5 /* UIView+DLRLayoutConstraints.m in Sources */,
+				4362BDC11A8ABA5900B3A89E /* UIDevice+DLR.m in Sources */,
 				4393736F1A8521A800A552D5 /* UIView+DLRRoundedCorners.m in Sources */,
 				4393736B1A8521A800A552D5 /* UIImage+DLR.m in Sources */,
 				439373731A8521A800A552D5 /* UIWebView+DLRViewport.m in Sources */,
@@ -492,6 +503,7 @@
 				433A87051A856455008CFA82 /* UIButton+DLRTests.m in Sources */,
 				4393737E1A85220F00A552D5 /* UIImage+DLRTests.m in Sources */,
 				4393737F1A85220F00A552D5 /* UIView+DLRLayoutConstraintsTests.m in Sources */,
+				4362BDC31A8AC0C400B3A89E /* UIDevice+DLRTests.m in Sources */,
 				4393737D1A85220F00A552D5 /* UIColor+DLRTests.m in Sources */,
 				4393737C1A85220F00A552D5 /* UIApplication+DLRLocalNotificationsTests.m in Sources */,
 				439373821A85220F00A552D5 /* UIWebView+DLRViewportTests.m in Sources */,

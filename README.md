@@ -84,3 +84,30 @@ UIViewController *childViewController = [self.storyboard instantiateViewControll
 ```objc
 [self.containerView dlr_applyRoundedCornersWithRadius:18.0f];
 ```
+---
+### UIDevice Category Examples
+
+##### User Interface Idiom
+
+```objc
+/** Returns true if current device has an idiom of pad. */
++ (BOOL)dlr_isUserInterfaceIdiomPad;
+```
+
+##### System Version
+```objc
+/** Returns true if the curent device system version is equal to version. */
++ (BOOL)dlr_isSystemVersionEqualToVersion:(NSString *)version;
+
+/** Returns true if the curent device system version is greater than version. */
++ (BOOL)dlr_isSystemVersionGreaterThanVersion:(NSString *)version;
+
+/** Returns true if the curent device system version is greater than or equal to version. */
++ (BOOL)dlr_isSystemVersionGreaterThanOrEqualToVersion:(NSString *)version;
+
+/** Returns true if the curent device system version is less than version. */
++ (BOOL)dlr_isSystemVersionLessThanVersion:(NSString *)version;
+
+/** Returns true if the curent device system version is less than or equal to version. */
++ (BOOL)dlr_isSystemVersionLessThanOrEqualToVersion:(NSString *)version;
+```
