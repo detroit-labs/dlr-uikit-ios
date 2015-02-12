@@ -45,6 +45,15 @@
 		439373801A85220F00A552D5 /* UIView+DLRRoundedCornersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 439373791A85220F00A552D5 /* UIView+DLRRoundedCornersTests.m */; };
 		439373811A85220F00A552D5 /* UIViewController+DLRParentViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4393737A1A85220F00A552D5 /* UIViewController+DLRParentViewControllerTests.m */; };
 		439373821A85220F00A552D5 /* UIWebView+DLRViewportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4393737B1A85220F00A552D5 /* UIWebView+DLRViewportTests.m */; };
+		43B4C20A1A8C194C00680976 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C2091A8C194C00680976 /* ChildViewController.m */; };
+		43B4C20D1A8C19C300680976 /* UIViewController+DLRStoryboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B4C20B1A8C19C300680976 /* UIViewController+DLRStoryboardManager.h */; };
+		43B4C20E1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C20C1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m */; };
+		43B4C2121A8C1B2B00680976 /* DLRStoryboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43B4C2101A8C1B2B00680976 /* DLRStoryboardManager.h */; };
+		43B4C2131A8C1B2B00680976 /* DLRStoryboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C2111A8C1B2B00680976 /* DLRStoryboardManager.m */; };
+		43B4C2161A8C1CB100680976 /* Another.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B4C2141A8C1CB100680976 /* Another.storyboard */; };
+		43B4C2191A8C1D4900680976 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C2181A8C1D4900680976 /* AnotherViewController.m */; };
+		43B4C21C1A8C21E500680976 /* DLRStoryboardManager+Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C21B1A8C21E500680976 /* DLRStoryboardManager+Main.m */; };
+		43B4C21F1A8C229E00680976 /* DLRStoryboardManager+Another.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B4C21E1A8C229E00680976 /* DLRStoryboardManager+Another.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +123,19 @@
 		439373791A85220F00A552D5 /* UIView+DLRRoundedCornersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DLRRoundedCornersTests.m"; sourceTree = "<group>"; };
 		4393737A1A85220F00A552D5 /* UIViewController+DLRParentViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLRParentViewControllerTests.m"; sourceTree = "<group>"; };
 		4393737B1A85220F00A552D5 /* UIWebView+DLRViewportTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DLRViewportTests.m"; sourceTree = "<group>"; };
+		43B4C2081A8C194C00680976 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		43B4C2091A8C194C00680976 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		43B4C20B1A8C19C300680976 /* UIViewController+DLRStoryboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DLRStoryboardManager.h"; sourceTree = "<group>"; };
+		43B4C20C1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLRStoryboardManager.m"; sourceTree = "<group>"; };
+		43B4C2101A8C1B2B00680976 /* DLRStoryboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRStoryboardManager.h; sourceTree = "<group>"; };
+		43B4C2111A8C1B2B00680976 /* DLRStoryboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRStoryboardManager.m; sourceTree = "<group>"; };
+		43B4C2151A8C1CB100680976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Another.storyboard; sourceTree = "<group>"; };
+		43B4C2171A8C1D4900680976 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
+		43B4C2181A8C1D4900680976 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		43B4C21A1A8C21E500680976 /* DLRStoryboardManager+Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLRStoryboardManager+Main.h"; sourceTree = "<group>"; };
+		43B4C21B1A8C21E500680976 /* DLRStoryboardManager+Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLRStoryboardManager+Main.m"; sourceTree = "<group>"; };
+		43B4C21D1A8C229E00680976 /* DLRStoryboardManager+Another.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLRStoryboardManager+Another.h"; sourceTree = "<group>"; };
+		43B4C21E1A8C229E00680976 /* DLRStoryboardManager+Another.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLRStoryboardManager+Another.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +197,7 @@
 		433676F31A8552F70012D0FE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				43B4C2141A8C1CB100680976 /* Another.storyboard */,
 				432270391A854C0C00EC6EED /* Images.xcassets */,
 				4322703B1A854C0C00EC6EED /* LaunchScreen.xib */,
 				432270361A854C0C00EC6EED /* Main.storyboard */,
@@ -217,6 +240,14 @@
 		433A87061A85690E008CFA82 /* DLRParentViewController */ = {
 			isa = PBXGroup;
 			children = (
+				43B4C2171A8C1D4900680976 /* AnotherViewController.h */,
+				43B4C2181A8C1D4900680976 /* AnotherViewController.m */,
+				43B4C2081A8C194C00680976 /* ChildViewController.h */,
+				43B4C2091A8C194C00680976 /* ChildViewController.m */,
+				43B4C21D1A8C229E00680976 /* DLRStoryboardManager+Another.h */,
+				43B4C21E1A8C229E00680976 /* DLRStoryboardManager+Another.m */,
+				43B4C21A1A8C21E500680976 /* DLRStoryboardManager+Main.h */,
+				43B4C21B1A8C21E500680976 /* DLRStoryboardManager+Main.m */,
 				433A87071A856929008CFA82 /* ParentViewController.h */,
 				433A87081A856929008CFA82 /* ParentViewController.m */,
 			);
@@ -248,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				439373571A85219400A552D5 /* Categories */,
+				43B4C20F1A8C1ADA00680976 /* Storyboard Manager */,
 				439372EA1A851D8B00A552D5 /* Supporting Files */,
 				439372EC1A851D8B00A552D5 /* DLRUIKit.h */,
 			);
@@ -322,6 +354,18 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		43B4C20F1A8C1ADA00680976 /* Storyboard Manager */ = {
+			isa = PBXGroup;
+			children = (
+				43B4C20B1A8C19C300680976 /* UIViewController+DLRStoryboardManager.h */,
+				43B4C20C1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m */,
+				43B4C2101A8C1B2B00680976 /* DLRStoryboardManager.h */,
+				43B4C2111A8C1B2B00680976 /* DLRStoryboardManager.m */,
+			);
+			name = "Storyboard Manager";
+			path = source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -331,6 +375,7 @@
 			files = (
 				439372ED1A851D8B00A552D5 /* DLRUIKit.h in Headers */,
 				439373721A8521A800A552D5 /* UIWebView+DLRViewport.h in Headers */,
+				43B4C2121A8C1B2B00680976 /* DLRStoryboardManager.h in Headers */,
 				4393736A1A8521A800A552D5 /* UIImage+DLR.h in Headers */,
 				433A87021A8561C2008CFA82 /* UIButton+DLR.h in Headers */,
 				439373681A8521A800A552D5 /* UIColor+DLR.h in Headers */,
@@ -339,6 +384,7 @@
 				4393736C1A8521A800A552D5 /* UIView+DLRLayoutConstraints.h in Headers */,
 				4393736E1A8521A800A552D5 /* UIView+DLRRoundedCorners.h in Headers */,
 				439373701A8521A800A552D5 /* UIViewController+DLRParentViewController.h in Headers */,
+				43B4C20D1A8C19C300680976 /* UIViewController+DLRStoryboardManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +493,7 @@
 			files = (
 				432270381A854C0C00EC6EED /* Main.storyboard in Resources */,
 				4322703D1A854C0C00EC6EED /* LaunchScreen.xib in Resources */,
+				43B4C2161A8C1CB100680976 /* Another.storyboard in Resources */,
 				4322703A1A854C0C00EC6EED /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,9 +521,13 @@
 			files = (
 				433A87091A856929008CFA82 /* ParentViewController.m in Sources */,
 				432270321A854C0B00EC6EED /* AppDelegate.m in Sources */,
+				43B4C21F1A8C229E00680976 /* DLRStoryboardManager+Another.m in Sources */,
 				4322702F1A854C0B00EC6EED /* main.m in Sources */,
 				433A86FF1A85606A008CFA82 /* ButtonViewController.m in Sources */,
 				433676F81A8553D80012D0FE /* ColorViewController.m in Sources */,
+				43B4C2191A8C1D4900680976 /* AnotherViewController.m in Sources */,
+				43B4C20A1A8C194C00680976 /* ChildViewController.m in Sources */,
+				43B4C21C1A8C21E500680976 /* DLRStoryboardManager+Main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,11 +535,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B4C20E1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m in Sources */,
 				433A87031A8561C2008CFA82 /* UIButton+DLR.m in Sources */,
 				439373711A8521A800A552D5 /* UIViewController+DLRParentViewController.m in Sources */,
 				4393736D1A8521A800A552D5 /* UIView+DLRLayoutConstraints.m in Sources */,
 				4362BDC11A8ABA5900B3A89E /* UIDevice+DLR.m in Sources */,
 				4393736F1A8521A800A552D5 /* UIView+DLRRoundedCorners.m in Sources */,
+				43B4C2131A8C1B2B00680976 /* DLRStoryboardManager.m in Sources */,
 				4393736B1A8521A800A552D5 /* UIImage+DLR.m in Sources */,
 				439373731A8521A800A552D5 /* UIWebView+DLRViewport.m in Sources */,
 				439373691A8521A800A552D5 /* UIColor+DLR.m in Sources */,
@@ -542,6 +595,14 @@
 				4322703C1A854C0C00EC6EED /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		43B4C2141A8C1CB100680976 /* Another.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43B4C2151A8C1CB100680976 /* Base */,
+			);
+			name = Another.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

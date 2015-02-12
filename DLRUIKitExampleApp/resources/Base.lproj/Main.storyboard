@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GsW-BQ-2yL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GsW-BQ-2yL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -166,34 +166,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlc-5E-NYB" userLabel="containerView">
-                                <rect key="frame" x="190" y="190" width="220" height="220"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlc-5E-NYB" userLabel="firstContainerView">
+                                <rect key="frame" x="190" y="185" width="220" height="110"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="0OL-Ab-d6W"/>
+                                    <constraint firstAttribute="height" constant="110" id="0OL-Ab-d6W"/>
                                     <constraint firstAttribute="width" constant="220" id="lVI-G9-4tf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahm-hd-CPh" userLabel="secondContainerView">
+                                <rect key="frame" x="190" y="305" width="220" height="110"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="EW2-KP-iL1"/>
+                                    <constraint firstAttribute="height" constant="110" id="hhc-lS-Cet"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="wlc-5E-NYB" secondAttribute="centerY" id="6KC-IJ-YKJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ahm-hd-CPh" secondAttribute="centerX" id="05C-gd-AGP"/>
+                            <constraint firstAttribute="centerY" secondItem="wlc-5E-NYB" secondAttribute="centerY" constant="60" id="6KC-IJ-YKJ"/>
                             <constraint firstAttribute="centerX" secondItem="wlc-5E-NYB" secondAttribute="centerX" id="VSW-BQ-eDJ"/>
+                            <constraint firstAttribute="centerY" secondItem="Ahm-hd-CPh" secondAttribute="centerY" constant="-60" id="hWj-L2-4km"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DLRParentViewController" id="eXl-e5-Fzn"/>
                     <connections>
-                        <outlet property="containerView" destination="wlc-5E-NYB" id="LVa-Ez-7da"/>
+                        <outlet property="firstContainerView" destination="wlc-5E-NYB" id="Zu4-OI-2eg"/>
+                        <outlet property="secondContainerView" destination="Ahm-hd-CPh" id="9KV-e8-W3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5j-NQ-6E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1954" y="1249"/>
         </scene>
-        <!--View Controller-->
+        <!--Child View Controller-->
         <scene sceneID="xMC-8R-nla">
             <objects>
-                <viewController storyboardIdentifier="ChildViewController" id="uWQ-Me-535" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildViewController" id="uWQ-Me-535" customClass="ChildViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K1c-vb-JSw"/>
                         <viewControllerLayoutGuide type="bottom" id="oU8-2W-Ptw"/>
