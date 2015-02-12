@@ -6,11 +6,15 @@
 //  Copyright (c) 2015 Detroit Labs, LLC. All rights reserved.
 //
 
-#import "DLRStoryboardManager+Main.h"
+#import "DLRStoryboardManager.h"
 
 #import "ChildViewController.h"
 
 static NSString * const kStoryboardName = @"Main";
+
+@interface DLRStoryboardManager (Main)
+
+@end
 
 @implementation DLRStoryboardManager (Main)
 

@@ -132,9 +132,7 @@
 		43B4C2151A8C1CB100680976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Another.storyboard; sourceTree = "<group>"; };
 		43B4C2171A8C1D4900680976 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		43B4C2181A8C1D4900680976 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
-		43B4C21A1A8C21E500680976 /* DLRStoryboardManager+Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLRStoryboardManager+Main.h"; sourceTree = "<group>"; };
 		43B4C21B1A8C21E500680976 /* DLRStoryboardManager+Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLRStoryboardManager+Main.m"; sourceTree = "<group>"; };
-		43B4C21D1A8C229E00680976 /* DLRStoryboardManager+Another.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DLRStoryboardManager+Another.h"; sourceTree = "<group>"; };
 		43B4C21E1A8C229E00680976 /* DLRStoryboardManager+Another.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DLRStoryboardManager+Another.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,9 +242,7 @@
 				43B4C2181A8C1D4900680976 /* AnotherViewController.m */,
 				43B4C2081A8C194C00680976 /* ChildViewController.h */,
 				43B4C2091A8C194C00680976 /* ChildViewController.m */,
-				43B4C21D1A8C229E00680976 /* DLRStoryboardManager+Another.h */,
 				43B4C21E1A8C229E00680976 /* DLRStoryboardManager+Another.m */,
-				43B4C21A1A8C21E500680976 /* DLRStoryboardManager+Main.h */,
 				43B4C21B1A8C21E500680976 /* DLRStoryboardManager+Main.m */,
 				433A87071A856929008CFA82 /* ParentViewController.h */,
 				433A87081A856929008CFA82 /* ParentViewController.m */,
