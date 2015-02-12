@@ -10,7 +10,7 @@
 
 @interface DLRStoryboardManager ()
 
-@property (nonatomic) NSMutableDictionary *something;
+@property (nonatomic) NSMutableDictionary *viewControllerIdentifierToStoryboardIdentifierMap;
 
 @end
 
@@ -28,7 +28,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _something = [NSMutableDictionary dictionary];
+        _viewControllerIdentifierToStoryboardIdentifierMap = [NSMutableDictionary dictionary];
         
     }
     return self;
@@ -37,13 +37,13 @@
 + (void)registerStoryboardName:(NSString *)name withStoryboardIdentifier:(NSString *)identifier {
     DLRStoryboardManager *storyboardManager = [self sharedInstance];
     
-    storyboardManager.something[identifier] = [name copy];
+    storyboardManager.viewControllerIdentifierToStoryboardIdentifierMap[[identifier copy]] = [name copy];
 }
 
 + (id)instantiateViewControllerWithIdentifier:(NSString *)identifier {
     DLRStoryboardManager *storyboardManager = [self sharedInstance];
     
-    NSString *storyboardName = storyboardManager.something[identifier];
+    NSString *storyboardName = storyboardManager.viewControllerIdentifierToStoryboardIdentifierMap[identifier];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     
