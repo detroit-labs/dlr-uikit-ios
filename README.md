@@ -96,7 +96,7 @@ ChildViewController *childViewController = [ChildViewController dlr_instantiateV
 
 ### UIViewController+DLRStoryboardManager Category Examples
 
-Create one category for every storyboard.
+Create one category for each storyboard.
 
 ```objc
 #import "DLRStoryboardManager+Main.h"
@@ -114,6 +114,14 @@ static NSString * const kStoryboardName = @"Main"; // Main.storyboard
 
 @end
 ```
+
+These categories can be generated.
+
+```sh
+bin/DLRStoryboardManager.sh DLRUIKitExampleApp/Main.storyboard
+```
+
+Lets instantiate a child view controller.
 
 ```objc
 ChildViewController *childViewController = [ChildViewController dlr_instantiateViewController];
