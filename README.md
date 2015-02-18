@@ -30,7 +30,8 @@ Normal State | Highlighted State | Disabled State
 ------------ | ----------------- | --------------
 ![UIButton normal](README/Images/UIButton-normal.png) | ![UIButton highlighted](README/Images/UIButton-highlighted.png) | ![UIButton disabled](README/Images/UIButton-disabled.png)
 
-##### UIButton dlr_setBackgroundColor:forState:
+##### UIButton dlr_setBackgroundColor: forState:
+
 ```objc
 [self.veryNiceButton dlr_setBackgroundColor:[UIColor brownColor] forState:UIControlStateNormal];
 [self.veryNiceButton dlr_setBackgroundColor:[UIColor blueColor] forState:UIControlStateHighlighted];
@@ -38,16 +39,17 @@ Normal State | Highlighted State | Disabled State
 ```
 
 ##### UIView dlr_applyRoundedCornersWithRadius:
+
 ```objc
 [self.veryNiceButton dlr_applyRoundedCornersWithRadius:18.0f];
 ```
 
----
 ### UIColor Category Examples
 
 ![UIColor](README/Images/UIColor.png)
 
-##### UIColor dlr_colorWithRed:green:blue:
+##### UIColor dlr_colorWithRed: green: blue:
+
 ```objc
 self.navyBlueView.backgroundColor = [UIColor dlr_colorWithRed:25 green:116 blue:210];
 self.outrageousOrangeView.backgroundColor = [UIColor dlr_colorWithRed:255 green:110 blue:74];
@@ -58,6 +60,7 @@ self.unmellowYellowView.backgroundColor = [UIColor dlr_colorWithRed:255 green:25
 ```
 
 ##### UIView dlr_applyRoundedCornersWithRadius:
+
 ```objc
 [self.navyBlueView dlr_applyRoundedCornersWithRadius:18.0f];
 [self.outrageousOrangeView dlr_applyRoundedCornersWithRadius:18.0f];
@@ -67,24 +70,63 @@ self.unmellowYellowView.backgroundColor = [UIColor dlr_colorWithRed:255 green:25
 [self.unmellowYellowView dlr_applyRoundedCornersWithRadius:18.0f];
 ```
 
----
-### UIViewController Category DLRParentViewController Examples
+### UIViewController+DLRParentViewController Category Examples
 
 Screen Shot | Storyboard
 ----------- | ----------
 ![DLRParentViewController](README/Images/DLRParentViewController.png) | ![DLRParentViewController storyboard](README/Images/DLRParentViewController-storyboard.png)
 
+##### UIViewController dlr_instantiateViewController
+
 ```objc
-UIViewController *childViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ChildViewController"];
-  
+ChildViewController *childViewController = [ChildViewController dlr_instantiateViewController];
+```
+
+##### UIViewController dlr_addToParentViewController:
+
+```objc
 [childViewController dlr_addToParentViewController:self parentView:self.containerView];
 ```
 
 ##### UIView dlr_applyRoundedCornersWithRadius:
+
 ```objc
 [self.containerView dlr_applyRoundedCornersWithRadius:18.0f];
 ```
----
+
+### UIViewController+DLRStoryboardManager Category Examples
+
+Create one category for each storyboard.
+
+```objc
+#import "DLRStoryboardManager+Main.h"
+
+#import "ChildViewController.h"
+
+static NSString * const kStoryboardName = @"Main"; // Main.storyboard
+
+@implementation DLRStoryboardManager (Main)
+
++ (void)load {
+  [self registerStoryboardName:kStoryboardName
+      withStoryboardIdentifier:NSStringFromClass([ChildViewController class])];
+}
+
+@end
+```
+
+These categories can be generated.
+
+```sh
+bin/DLRStoryboardManager.sh DLRUIKitExampleApp/Main.storyboard
+```
+
+Lets instantiate a child view controller.
+
+```objc
+ChildViewController *childViewController = [ChildViewController dlr_instantiateViewController];
+```
+
 ### UIDevice Category Examples
 
 ##### User Interface Idiom
@@ -95,6 +137,7 @@ UIViewController *childViewController = [self.storyboard instantiateViewControll
 ```
 
 ##### System Version
+
 ```objc
 /** Returns true if the curent device system version is equal to version. */
 + (BOOL)dlr_isSystemVersionEqualToVersion:(NSString *)version;
