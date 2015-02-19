@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 #  DLRStoryboardManager.sh
 #  DLRUIKit
@@ -35,7 +35,7 @@ process_storyboard() {
 
   storyboard=$1
 
-  filename=`basename ${storyboard}`
+  filename=`basename "${storyboard}"`
   name="${filename%.*}"
 
   xslt="`dirname $0`/resources/DLRStoryboardManager.xsl"
@@ -57,11 +57,11 @@ process_directory() {
   if [[ $# -ge 2 ]]; then
 
     target_directory=$2
-    find . -iname '*.storyboard' -exec "$0" {} "${target_directory}" \;
+    find $1 -iname '*.storyboard' -exec "$0" {} "${target_directory}" \;
 
   else
 
-    find . -iname '*.storyboard' -exec "$0" {} \;
+    find $1 -iname '*.storyboard' -exec "$0" {} \;
 
   fi
 
