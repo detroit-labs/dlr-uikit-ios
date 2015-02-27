@@ -14,6 +14,14 @@
     <xsl:output method="text" omit-xml-declaration="yes" indent="no"/>
     <xsl:strip-space elements="*"/>
     
+    <xsl:variable name="collectionViewControllers" select="//collectionViewController[@storyboardIdentifier = @customClass]" />
+    <xsl:variable name="pageViewControllers" select="//pageViewController[@storyboardIdentifier = @customClass]" />
+    <xsl:variable name="tabBarControllers" select="//tabBarController[@storyboardIdentifier = @customClass]" />
+    <xsl:variable name="tableViewControllers" select="//tableViewController[@storyboardIdentifier = @customClass]" />
+    <xsl:variable name="viewControllers" select="//viewController[@storyboardIdentifier = @customClass]" />
+    
+    <xsl:variable name="controllers" select="$collectionViewControllers | $pageViewControllers | $tabBarControllers | $tableViewControllers | $viewControllers" />
+    
     <xsl:template match="/">
         <xsl:text>//&#xa;</xsl:text>
         
@@ -55,7 +63,7 @@
     </xsl:template>
     
     <xsl:template name="import">
-        <xsl:for-each select="//viewController[@storyboardIdentifier = @customClass]">
+        <xsl:for-each select="$controllers">
             
             <xsl:sort select="@storyboardIdentifier"/>
             
@@ -67,7 +75,7 @@
     </xsl:template>
     
     <xsl:template name="register">
-        <xsl:for-each select="//viewController[@storyboardIdentifier = @customClass]">
+        <xsl:for-each select="$controllers">
             
             <xsl:sort select="@storyboardIdentifier"/>
             
