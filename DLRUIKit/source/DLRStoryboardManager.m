@@ -44,6 +44,9 @@
     DLRStoryboardManager *storyboardManager = [self sharedInstance];
     
     NSString *storyboardName = storyboardManager.viewControllerIdentifierToStoryboardIdentifierMap[identifier];
+    if (!storyboardName) {
+        return nil;
+    }
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     
