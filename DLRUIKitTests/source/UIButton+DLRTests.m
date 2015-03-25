@@ -18,10 +18,16 @@
 
 #pragma mark - dlr_setBackgroundColor:forState:
 
-- (void)dlr_setBackgroundColorForState {
+- (void)testSetBackgroundColorForState {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     
+    UIImage *backgroundImage = [button backgroundImageForState:UIControlStateNormal];
+    XCTAssertNil(backgroundImage);
+    
     [button dlr_setBackgroundColor:[UIColor redColor] forState:UIControlStateNormal];
+    
+    backgroundImage = [button backgroundImageForState:UIControlStateNormal];
+    XCTAssertNotNil(backgroundImage);
 }
 
 @end
