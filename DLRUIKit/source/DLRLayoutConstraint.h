@@ -13,6 +13,7 @@
 /** The initial value of the constant property after awake from nib. */
 @property (readonly, nonatomic) CGFloat dlr_initialConstant;
 
+/** Resets the constant back to the initial value after awake from nib. */
 - (void)dlr_applyInitialConstant;
 
 @end
