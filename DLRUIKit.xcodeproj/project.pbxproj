@@ -21,6 +21,10 @@
 		433A87091A856929008CFA82 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A87081A856929008CFA82 /* ParentViewController.m */; };
 		433C59EF1AC30B100014EFB8 /* UIViewController+DLRStoryboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C59EE1AC30B100014EFB8 /* UIViewController+DLRStoryboardManagerTests.m */; };
 		433C59F81AC311230014EFB8 /* DLRStoryboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C59F71AC311230014EFB8 /* DLRStoryboardManagerTests.m */; };
+		433C59FC1AC335BE0014EFB8 /* DLRLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 433C59FA1AC335BE0014EFB8 /* DLRLayoutConstraint.h */; };
+		433C59FD1AC335BE0014EFB8 /* DLRLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C59FB1AC335BE0014EFB8 /* DLRLayoutConstraint.m */; };
+		433C5A001AC336B10014EFB8 /* DLRLayoutConstraintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C59FF1AC336B10014EFB8 /* DLRLayoutConstraintTests.m */; };
+		433C5A041AC338250014EFB8 /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C5A031AC338250014EFB8 /* LayoutConstraintViewController.m */; };
 		4362BDC01A8ABA5900B3A89E /* UIDevice+DLR.h in Headers */ = {isa = PBXBuildFile; fileRef = 4362BDBE1A8ABA5900B3A89E /* UIDevice+DLR.h */; };
 		4362BDC11A8ABA5900B3A89E /* UIDevice+DLR.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362BDBF1A8ABA5900B3A89E /* UIDevice+DLR.m */; };
 		4362BDC31A8AC0C400B3A89E /* UIDevice+DLRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4362BDC21A8AC0C400B3A89E /* UIDevice+DLRTests.m */; };
@@ -100,6 +104,11 @@
 		433A87081A856929008CFA82 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
 		433C59EE1AC30B100014EFB8 /* UIViewController+DLRStoryboardManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DLRStoryboardManagerTests.m"; sourceTree = "<group>"; };
 		433C59F71AC311230014EFB8 /* DLRStoryboardManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRStoryboardManagerTests.m; sourceTree = "<group>"; };
+		433C59FA1AC335BE0014EFB8 /* DLRLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRLayoutConstraint.h; sourceTree = "<group>"; };
+		433C59FB1AC335BE0014EFB8 /* DLRLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRLayoutConstraint.m; sourceTree = "<group>"; };
+		433C59FF1AC336B10014EFB8 /* DLRLayoutConstraintTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRLayoutConstraintTests.m; sourceTree = "<group>"; };
+		433C5A021AC338250014EFB8 /* LayoutConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintViewController.h; sourceTree = "<group>"; };
+		433C5A031AC338250014EFB8 /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
 		4362BDBE1A8ABA5900B3A89E /* UIDevice+DLR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DLR.h"; sourceTree = "<group>"; };
 		4362BDBF1A8ABA5900B3A89E /* UIDevice+DLR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DLR.m"; sourceTree = "<group>"; };
 		4362BDC21A8AC0C400B3A89E /* UIDevice+DLRTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DLRTests.m"; sourceTree = "<group>"; };
@@ -222,9 +231,10 @@
 		433676F41A8553480012D0FE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				433C5A011AC337F50014EFB8 /* DLRLayoutConstraint */,
+				433A87061A85690E008CFA82 /* DLRParentViewController */,
 				433A86FC1A855F5C008CFA82 /* UIButton */,
 				433676F51A85535A0012D0FE /* UIColor */,
-				433A87061A85690E008CFA82 /* DLRParentViewController */,
 				432270301A854C0B00EC6EED /* AppDelegate.h */,
 				432270311A854C0B00EC6EED /* AppDelegate.m */,
 			);
@@ -275,6 +285,34 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		433C59F91AC335A90014EFB8 /* Layout Constraint */ = {
+			isa = PBXGroup;
+			children = (
+				433C59FA1AC335BE0014EFB8 /* DLRLayoutConstraint.h */,
+				433C59FB1AC335BE0014EFB8 /* DLRLayoutConstraint.m */,
+			);
+			name = "Layout Constraint";
+			path = source;
+			sourceTree = "<group>";
+		};
+		433C59FE1AC336350014EFB8 /* Layout Constraint Tests */ = {
+			isa = PBXGroup;
+			children = (
+				433C59FF1AC336B10014EFB8 /* DLRLayoutConstraintTests.m */,
+			);
+			name = "Layout Constraint Tests";
+			path = source;
+			sourceTree = "<group>";
+		};
+		433C5A011AC337F50014EFB8 /* DLRLayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				433C5A021AC338250014EFB8 /* LayoutConstraintViewController.h */,
+				433C5A031AC338250014EFB8 /* LayoutConstraintViewController.m */,
+			);
+			name = DLRLayoutConstraint;
+			sourceTree = "<group>";
+		};
 		439372DD1A851D8B00A552D5 = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				439373571A85219400A552D5 /* Categories */,
+				433C59F91AC335A90014EFB8 /* Layout Constraint */,
 				43B4C20F1A8C1ADA00680976 /* Storyboard Manager */,
 				439372EA1A851D8B00A552D5 /* Supporting Files */,
 				439372EC1A851D8B00A552D5 /* DLRUIKit.h */,
@@ -319,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				439373741A8521CB00A552D5 /* Category Tests */,
+				433C59FE1AC336350014EFB8 /* Layout Constraint Tests */,
 				433C59E71AC309E40014EFB8 /* Storyboard Manager Tests */,
 				439372F71A851D8B00A552D5 /* Supporting Files */,
 			);
@@ -396,6 +436,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433C59FC1AC335BE0014EFB8 /* DLRLayoutConstraint.h in Headers */,
 				439372ED1A851D8B00A552D5 /* DLRUIKit.h in Headers */,
 				439373721A8521A800A552D5 /* UIWebView+DLRViewport.h in Headers */,
 				43B4C2121A8C1B2B00680976 /* DLRStoryboardManager.h in Headers */,
@@ -544,6 +585,7 @@
 			files = (
 				433A87091A856929008CFA82 /* ParentViewController.m in Sources */,
 				432270321A854C0B00EC6EED /* AppDelegate.m in Sources */,
+				433C5A041AC338250014EFB8 /* LayoutConstraintViewController.m in Sources */,
 				43B4C21F1A8C229E00680976 /* DLRStoryboardManager+Another.m in Sources */,
 				4322702F1A854C0B00EC6EED /* main.m in Sources */,
 				433A86FF1A85606A008CFA82 /* ButtonViewController.m in Sources */,
@@ -559,6 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43B4C20E1A8C19C300680976 /* UIViewController+DLRStoryboardManager.m in Sources */,
+				433C59FD1AC335BE0014EFB8 /* DLRLayoutConstraint.m in Sources */,
 				433A87031A8561C2008CFA82 /* UIButton+DLR.m in Sources */,
 				439373711A8521A800A552D5 /* UIViewController+DLRParentViewController.m in Sources */,
 				4393736D1A8521A800A552D5 /* UIView+DLRLayoutConstraints.m in Sources */,
@@ -585,6 +628,7 @@
 				4393737D1A85220F00A552D5 /* UIColor+DLRTests.m in Sources */,
 				4393737C1A85220F00A552D5 /* UIApplication+DLRLocalNotificationsTests.m in Sources */,
 				439373821A85220F00A552D5 /* UIWebView+DLRViewportTests.m in Sources */,
+				433C5A001AC336B10014EFB8 /* DLRLayoutConstraintTests.m in Sources */,
 				439373811A85220F00A552D5 /* UIViewController+DLRParentViewControllerTests.m in Sources */,
 				439373801A85220F00A552D5 /* UIView+DLRRoundedCornersTests.m in Sources */,
 			);

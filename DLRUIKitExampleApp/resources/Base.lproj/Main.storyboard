@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GsW-BQ-2yL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GsW-BQ-2yL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--DLRUIKit-->
@@ -200,6 +200,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5j-NQ-6E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1954" y="1249"/>
+        </scene>
+        <!--Layout Constraint View Controller-->
+        <scene sceneID="6xm-bb-AIS">
+            <objects>
+                <viewController storyboardIdentifier="LayoutConstraintViewController" id="xeb-09-eSF" customClass="LayoutConstraintViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pln-ga-jrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WA-53-Xug"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ewt-AA-e4L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUr-bU-WPD">
+                                <rect key="frame" x="300" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EfY-l4-nTr"/>
+                                    <constraint firstAttribute="width" constant="100" id="FYF-AE-7GP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TUr-bU-WPD" firstAttribute="centerX" secondItem="ewt-AA-e4L" secondAttribute="centerX" constant="50" id="NAe-mr-OiS" customClass="DLRLayoutConstraint"/>
+                            <constraint firstAttribute="centerY" secondItem="TUr-bU-WPD" secondAttribute="centerY" id="NjG-vk-FTD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="layoutConstraint" destination="NAe-mr-OiS" id="TxB-bL-olM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dg-ka-IJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="2013"/>
         </scene>
         <!--Child View Controller-->
         <scene sceneID="xMC-8R-nla">
