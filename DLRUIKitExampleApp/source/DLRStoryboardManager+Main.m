@@ -9,6 +9,7 @@
 #import "DLRStoryboardManager.h"
 
 #import "ChildViewController.h"
+#import "LayoutConstraintViewController.h"
 
 static NSString * const kStoryboardName = @"Main";
 
@@ -20,6 +21,7 @@ static NSString * const kStoryboardName = @"Main";
 
 + (void)load {
     [self registerStoryboardName:kStoryboardName withStoryboardIdentifier:NSStringFromClass([ChildViewController class])];
+    [self registerStoryboardName:kStoryboardName withStoryboardIdentifier:NSStringFromClass([LayoutConstraintViewController class])];
 }
 
 @end

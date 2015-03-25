@@ -154,3 +154,21 @@ ChildViewController *childViewController = [ChildViewController dlr_instantiateV
 /** Returns true if the curent device system version is less than or equal to version. */
 + (BOOL)dlr_isSystemVersionLessThanOrEqualToVersion:(NSString *)version;
 ```
+
+### DLRLayoutConstraint Examples
+
+```objc
+/** Resets the constant back to the initial value after awake from nib. */
+- (void)dlr_applyInitialConstant;
+```
+
+```objc
+@property (weak, nonatomic) IBOutlet DLRLayoutConstraint *layoutConstraint;
+
+// initial value of layoutConstraint.constant is 50
+
+layoutConstraint.constant = -10;
+
+// resets layoutConstraint.constant back to 50
+[layoutConstraint dlr_applyInitialConstant];
+```
