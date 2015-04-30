@@ -10,7 +10,9 @@
 
 @interface UINavigationController (DLR)
 
-/** Returns true if the passed view controller is the first view controller in the stack of view controllers. */
+/** Returns true if the passed view controller is the first view controller in the
+ stack of view controllers.  This can be helpful in determining if the
+ view controller needed to be popped or dismissed. */
 - (BOOL)dlr_isFirstViewController:(UIViewController *)viewController;
 
 @end

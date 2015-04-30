@@ -10,7 +10,8 @@
 
 @interface UIViewController (DLRNavigationController)
 
-/** Returns a new navigation controller instance with this view controller as the root view controller. */
+/** Returns a new navigation controller instance with this view controller as the
+ root view controller. */
 - (UINavigationController *)dlr_embedInsideNavigationController;
 
 @end
