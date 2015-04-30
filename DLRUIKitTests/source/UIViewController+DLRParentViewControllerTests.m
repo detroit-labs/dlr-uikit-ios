@@ -10,11 +10,11 @@
 
 #import "UIViewController+DLRParentViewController.h"
 
-@interface DLRParentViewControllerTests : XCTestCase
+@interface UIViewController_DLRParentViewControllerTests : XCTestCase
 
 @end
 
-@implementation DLRParentViewControllerTests
+@implementation UIViewController_DLRParentViewControllerTests
 
 #pragma mark - dlr_addToParentViewController:
 
