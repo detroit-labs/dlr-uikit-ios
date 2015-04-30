@@ -172,3 +172,20 @@ layoutConstraint.constant = -10;
 // resets layoutConstraint.constant back to 50
 [layoutConstraint dlr_applyInitialConstant];
 ```
+
+### UINavigationController+DLR Category Examples
+
+```objc
+/** Returns true if the passed view controller is the first view controller in the
+ stack of view controllers.  This can be helpful in determining if the
+ view controller needed to be popped or dismissed. */
+- (BOOL)dlr_isFirstViewController:(UIViewController *)viewController;
+```
+
+### UIViewController+DLRNavigationController Category Examples
+
+```objc
+/** Returns a new navigation controller instance with this view controller as the
+ root view controller. */
+- (UINavigationController *)dlr_embedInsideNavigationController;
+```
