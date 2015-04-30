@@ -10,7 +10,7 @@
 
 #import "UIDevice+DLR.h"
 
-@interface UIDevice (DLRPrivate)
+@interface UIDevice (UIDevice_DLRTests)
 
 + (BOOL)dlr_isSystemVersion:(NSString *)systemVersion equalToVersion:(NSString *)version;
 + (BOOL)dlr_isSystemVersion:(NSString *)systemVersion greaterThanVersion:(NSString *)version;
