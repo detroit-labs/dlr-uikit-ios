@@ -176,13 +176,15 @@ layoutConstraint.constant = -10;
 ### UINavigationController+DLR Category Examples
 
 ```objc
-/** Returns true if the passed view controller is the first view controller in the stack of view controllers. */
+/** Returns true if the passed view controller is the first view controller in the
+    stack of view controllers. */
 - (BOOL)dlr_isFirstViewController:(UIViewController *)viewController;
 ```
 
 ### UIViewController+DLRNavigationController Category Examples
 
 ```objc
-/** Returns a new navigation controller instance with this view controller as the root view controller. */
+/** Returns a new navigation controller instance with this view controller as the
+    root view controller. */
 - (UINavigationController *)dlr_embedInsideNavigationController;
 ```
