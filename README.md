@@ -189,3 +189,10 @@ layoutConstraint.constant = -10;
  root view controller. */
 - (UINavigationController *)dlr_embedInsideNavigationController;
 ```
+
+### UIViewController+DLRPresentedViewController Category Examples
+
+```objc
+/** Returns the top most presented view controller, which could be this view controller. */
+- (UIViewController *)dlr_topPresentedViewController;
+```
