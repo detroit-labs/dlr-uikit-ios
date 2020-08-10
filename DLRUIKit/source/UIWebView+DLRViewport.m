@@ -19,7 +19,6 @@
     @"var head = document.getElementsByTagName('head')[0];"
     @"head.appendChild(element);"
     @"}";
-    
     [self evaluateJavaScript:script completionHandler:nil];
 }
 
