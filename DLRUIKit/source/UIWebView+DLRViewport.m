@@ -8,7 +8,7 @@
 
 #import "UIWebView+DLRViewport.h"
 
-@implementation UIWebView (DLRViewport)
+@implementation WKWebView (DLRViewport)
 
 - (void)dlr_addViewport {
     NSString *script =
@@ -19,7 +19,8 @@
     @"var head = document.getElementsByTagName('head')[0];"
     @"head.appendChild(element);"
     @"}";
-    [self stringByEvaluatingJavaScriptFromString:script];
+    
+    [self evaluateJavaScript:script completionHandler:nil];
 }
 
 @end

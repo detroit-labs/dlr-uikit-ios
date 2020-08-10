@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Detroit Labs, LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface UIWebView (DLRViewport)
+@interface WKWebView (DLRViewport)
 
 - (void)dlr_addViewport;
 
