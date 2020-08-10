@@ -19,7 +19,7 @@
 #pragma mark - dlr_resetLocalNotifications
 
 - (void)testResetLocalNotifications {
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f)];
     
     [webView dlr_addViewport];
 }

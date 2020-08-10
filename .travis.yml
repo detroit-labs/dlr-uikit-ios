@@ -4,4 +4,4 @@ language: objective-c
 
 script:
   # TODO Add 'test' flag here once tests work on travis-ci server.
-  - xctool build -project DLRUIKit.xcodeproj -scheme DLRUIKitExampleApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -project DLRUIKit.xcodeproj -scheme DLRUIKitExampleApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
